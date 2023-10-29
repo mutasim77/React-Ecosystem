@@ -38,10 +38,7 @@ const Globe = () => {
             glowColor: [1.2, 1.2, 1.2],
             markers: [],
             onRender: (state) => {
-                // This prevents rotation while dragging
                 if (!pointerInteracting.current) {
-                    // Called on every animation frame.
-                    // `state` will be an empty object, return updated params.
                     phi += 0.005
                 }
                 state.phi = phi + r.get()
@@ -52,6 +49,7 @@ const Globe = () => {
         setTimeout(() => canvasRef.current.style.opacity = '1')
         return () => globe.destroy()
     }, [])
+
     return <div style={{
         width: '100%',
         maxWidth: 600,
