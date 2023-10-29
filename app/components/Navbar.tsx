@@ -6,7 +6,6 @@ import { AiFillGithub } from 'react-icons/ai'
 
 const Navbar = () => {
     const scrolled = useScroll(30);
-    console.log(scrolled);
 
     return (
         <header className={`fixed top-0 w-full border-b border-[#888] ${scrolled
