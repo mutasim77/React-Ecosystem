@@ -117,10 +117,14 @@ export const data: IData[] = [
             },
             {
                 id: 7,
+                name: 'Redux DevTools',
+                link: 'https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd'
+            },
+            {
+                id: 8,
                 name: 'Bit',
                 link: 'https://bit.dev/'
             },
-
         ]
     },
     {
@@ -156,7 +160,7 @@ export const data: IData[] = [
     },
     {
         id: 5,
-        title: 'Component Libraries',
+        title: 'UI Component Libraries',
         links: [
             {
                 id: 1,
@@ -314,6 +318,11 @@ export const data: IData[] = [
                 id: 5,
                 name: 'JSS',
                 link: 'https://cssinjs.org/?v=v10.10.0'
+            },
+            {
+                id: 6,
+                name: 'Tailwind CSS',
+                link: 'https://tailwindcss.com/'
             }
         ]
     },
@@ -350,24 +359,479 @@ export const data: IData[] = [
                 id: 6,
                 name: 'Vitest',
                 link: 'https://vitest.dev/'
+            },
+            {
+                id: 7,
+                name: 'Playwright',
+                link: 'https://playwright.dev/docs/intro'
             }
         ]
     },
     {
-        id: 2,
-        title: 'General Resources',
+        id: 9,
+        title: 'Routing',
         links: [
             {
                 id: 1,
-                name: 'Redux',
-                link: 'https://redux.js.org/introduction/getting-started'
+                name: 'React Router',
+                link: 'https://reactrouter.com/en/main'
             },
             {
                 id: 2,
-                name: 'Zustand',
-                link: 'https://docs.pmnd.rs/zustand/getting-started/introduction'
+                name: 'Wouter',
+                link: 'https://github.com/molefrog/wouter'
+            },
+            {
+                id: 3,
+                name: 'Tanstack Router',
+                link: 'https://tanstack.com/router/v1'
             }
         ]
     },
-
+    {
+        id: 10,
+        title: 'Components Sandboxes',
+        links: [
+            {
+                id: 1,
+                name: 'Storybook',
+                link: 'https://storybook.js.org/'
+            },
+            {
+                id: 2,
+                name: 'React Styleguidist',
+                link: 'https://react-styleguidist.js.org/'
+            },
+            {
+                id: 3,
+                name: 'React Cosmos',
+                link: 'https://reactcosmos.org/'
+            },
+        ]
+    },
+    {
+        id: 11,
+        title: 'Forms',
+        links: [
+            {
+                id: 1,
+                name: 'React Hook Form',
+                link: 'https://react-hook-form.com/'
+            },
+            {
+                id: 2,
+                name: 'Formik',
+                link: 'https://formik.org/'
+            },
+            {
+                id: 3,
+                name: 'React Jsonschema Form',
+                link: 'https://rjsf-team.github.io/react-jsonschema-form/'
+            },
+            {
+                id: 4,
+                name: 'React Final Form',
+                link: 'https://final-form.org/react'
+            },
+            {
+                id: 5,
+                name: 'Formily',
+                link: 'https://formilyjs.org/'
+            }
+        ]
+    },
+    {
+        id: 12,
+        title: 'Charts',
+        links: [
+            {
+                id: 1,
+                name: 'Recharts',
+                link: 'https://recharts.org/en-US'
+            },
+            {
+                id: 2,
+                name: 'Visx',
+                link: 'https://airbnb.io/visx'
+            },
+            {
+                id: 3,
+                name: 'Victory',
+                link: 'https://formidable.com/open-source/victory/'
+            },
+            {
+                id: 4,
+                name: 'React-Vis',
+                link: 'https://uber.github.io/react-vis/'
+            },
+            {
+                id: 5,
+                name: 'Nivo',
+                link: 'https://nivo.rocks/'
+            },
+            {
+                id: 6,
+                name: 'React Chartjs',
+                link: 'https://react-chartjs-2.js.org/'
+            },
+        ]
+    },
+    {
+        id: 13,
+        title: 'Renderers',
+        links: [
+            {
+                id: 1,
+                name: 'React Three Fiber',
+                link: 'https://docs.pmnd.rs/react-three-fiber/getting-started/introduction'
+            },
+            {
+                id: 2,
+                name: 'Ink',
+                link: 'https://github.com/vadimdemedes/ink'
+            },
+            {
+                id: 3,
+                name: 'Remotion',
+                link: 'https://www.remotion.dev/'
+            },
+            {
+                id: 4,
+                name: 'React PDF',
+                link: 'https://react-pdf.org/'
+            },
+            {
+                id: 5,
+                name: 'React Figma',
+                link: 'https://react-figma.dev/'
+            },
+            {
+                id: 6,
+                name: 'React Hardware',
+                link: 'https://iamdustan.com/react-hardware/'
+            },
+            {
+                id: 5,
+                name: 'Nil',
+                link: 'https://github.com/pmndrs/react-nil'
+            },
+        ]
+    },
+    {
+        id: 14,
+        title: 'Maps',
+        links: [
+            {
+                id: 1,
+                name: 'Map GL',
+                link: 'https://visgl.github.io/react-map-gl/'
+            },
+            {
+                id: 2,
+                name: 'Leaflet',
+                link: 'https://react-leaflet.js.org/'
+            },
+            {
+                id: 3,
+                name: 'Google Map',
+                link: 'https://github.com/google-map-react/google-map-react'
+            },
+            {
+                id: 4,
+                name: 'Deck GL',
+                link: 'https://deck.gl/'
+            },
+            {
+                id: 5,
+                name: 'Pigeon Maps',
+                link: 'https://pigeon-maps.js.org/'
+            },
+            {
+                id: 6,
+                name: 'Simple Maps',
+                link: 'https://www.react-simple-maps.io/'
+            }
+        ]
+    },
+    {
+        id: 15,
+        title: 'Tables and Grids',
+        links: [
+            {
+                id: 1,
+                name: 'React Grid Layout',
+                link: 'https://react-grid-layout.github.io/react-grid-layout/examples/0-showcase.html'
+            },
+            {
+                id: 2,
+                name: 'Tanstack Table',
+                link: 'https://tanstack.com/table/v8'
+            },
+            {
+                id: 3,
+                name: 'React Data Grid',
+                link: 'https://adazzle.github.io/react-data-grid/#/common-features'
+            }
+        ]
+    },
+    {
+        id: 16,
+        title: 'Internationalization',
+        links: [
+            {
+                id: 1,
+                name: 'FormatJS',
+                link: 'https://formatjs.io/'
+            },
+            {
+                id: 2,
+                name: 'i18next',
+                link: 'https://react.i18next.com/'
+            },
+            {
+                id: 3,
+                name: 'Typesafe i18n',
+                link: 'https://github.com/ivanhofer/typesafe-i18n'
+            }
+        ]
+    },
+    {
+        id: 17,
+        title: 'Graphics and Animations',
+        links: [
+            {
+                id: 1,
+                name: 'Framer Motion',
+                link: 'https://www.framer.com/motion/'
+            },
+            {
+                id: 2,
+                name: 'React Spring',
+                link: 'https://www.react-spring.dev/'
+            },
+            {
+                id: 3,
+                name: 'React Transition Group',
+                link: 'https://reactcommunity.org/react-transition-group/'
+            },
+            {
+                id: 4,
+                name: 'Auto Animate',
+                link: 'https://auto-animate.formkit.com/'
+            },
+            {
+                id: 5,
+                name: 'tsParticles',
+                link: 'https://github.com/tsparticles/react'
+            },
+            {
+                id: 6,
+                name: 'Parallax Tilt',
+                link: 'https://github.com/mkosir/react-parallax-tilt'
+            },
+            {
+                id: 7,
+                name: 'Gooey Effect',
+                link: 'https://gooey-react.netlify.app/'
+            }
+        ]
+    },
+    {
+        id: 18,
+        title: 'Data Fethching',
+        links: [
+            {
+                id: 1,
+                name: 'RTK Query',
+                link: 'https://redux-toolkit.js.org/rtk-query/overview'
+            },
+            {
+                id: 2,
+                name: 'SWR',
+                link: 'https://swr.vercel.app/'
+            },
+            {
+                id: 3,
+                name: 'TanStack Query',
+                link: 'https://tanstack.com/query/latest'
+            },
+            {
+                id: 4,
+                name: 'Axios',
+                link: 'https://axios-http.com/'
+            },
+            {
+                id: 5,
+                name: 'Apollo Client',
+                link: 'https://www.apollographql.com/docs/react'
+            }
+        ]
+    },
+    {
+        id: 19,
+        title: 'Awesome Libraries',
+        links: [
+            {
+                id: 1,
+                name: 'Floating UI',
+                link: 'https://floating-ui.com/'
+            },
+            {
+                id: 2,
+                name: 'Loadable Components',
+                link: 'https://loadable-components.com/'
+            },
+            {
+                id: 3,
+                name: 'Reapop',
+                link: 'https://louisbarranqueiro.github.io/reapop/'
+            },
+            {
+                id: 4,
+                name: 'React-Toastify',
+                link: 'https://fkhadra.github.io/react-toastify/introduction/'
+            },
+            {
+                id: 5,
+                name: 'Sonner',
+                link: 'https://sonner.emilkowal.ski/'
+            },
+            {
+                id: 6,
+                name: 'React Uploady',
+                link: 'https://react-uploady.org/'
+            },
+            {
+                id: 7,
+                name: 'Downshift',
+                link: 'https://www.downshift-js.com/'
+            },
+            {
+                id: 8,
+                name: 'React Select',
+                link: 'https://react-select.com/home'
+            },
+            {
+                id: 9,
+                name: 'DND',
+                link: 'https://react-dnd.github.io/react-dnd/about'
+            },
+            {
+                id: 10,
+                name: 'dndKit',
+                link: 'https://dndkit.com/'
+            },
+            {
+                id: 11,
+                name: 'React Dropzone',
+                link: 'https://react-dropzone.js.org/'
+            },
+            {
+                id: 12,
+                name: 'RND',
+                link: 'https://github.com/bokuweb/react-rnd'
+            },
+            {
+                id: 13,
+                name: 'Big Calendar',
+                link: 'https://github.com/jquense/react-big-calendar'
+            },
+            {
+                id: 14,
+                name: 'React Datepicker',
+                link: 'https://reactdatepicker.com/'
+            },
+            {
+                id: 15,
+                name: 'Loading Skeleton',
+                link: 'https://github.com/dvtng/react-loading-skeleton'
+            },
+            {
+                id: 16,
+                name: 'QR Code',
+                link: 'https://zpao.github.io/qrcode.react/'
+            },
+            {
+                id: 17,
+                name: 'React Archer',
+                link: 'https://github.com/pierpo/react-archer'
+            },
+            {
+                id: 18,
+                name: 'Device Detect',
+                link: 'https://github.com/duskload/react-device-detect'
+            },
+            {
+                id: 19,
+                name: 'React Colorful',
+                link: 'https://github.com/omgovich/react-colorful'
+            },
+            {
+                id: 20,
+                name: 'React Icons',
+                link: 'https://react-icons.github.io/react-icons/'
+            },
+            {
+                id: 21,
+                name: 'React Icons',
+                link: 'https://react-icons.github.io/react-icons/'
+            },
+            {
+                id: 22,
+                name: 'Complex Tree',
+                link: 'https://rct.lukasbach.com/'
+            },
+            {
+                id: 23,
+                name: 'Insta Stories',
+                link: 'https://mohitk05.github.io/react-insta-stories/'
+            },
+            {
+                id: 24,
+                name: 'Swiper',
+                link: 'https://swiperjs.com/'
+            },
+            {
+                id: 25,
+                name: 'Keen Slider',
+                link: 'https://keen-slider.io/'
+            },
+            {
+                id: 26,
+                name: 'Cookie Banner',
+                link: 'https://github.com/porscheofficial/cookie-consent-banner'
+            },
+            {
+                id: 27,
+                name: 'Tagify',
+                link: 'https://yaireo.github.io/tagify/'
+            },
+            {
+                id: 28,
+                name: 'Tagify',
+                link: 'https://yaireo.github.io/tagify/'
+            },
+            {
+                id: 29,
+                name: 'Supabase for Auth',
+                link: 'https://supabase.com/'
+            },
+        ]
+    },
+    {
+        id: 20,
+        title: 'Documentation',
+        links: [
+            {
+                id: 1,
+                name: 'Docusaurus',
+                link: 'https://docusaurus.io/'
+            },
+            {
+                id: 2,
+                name: 'Nextra',
+                link: 'https://nextra.site/'
+            }
+        ]
+    },
 ]
