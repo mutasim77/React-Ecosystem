@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +28,28 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.navigation-button{
+  @apply flex;
+}
+
+.search-input {
+  @apply block w-full p-4 pl-10 rounded-md text-black text-base bg-[#d0d0d0] focus:bg-[#e7e7e7] outline-none border-x-2  focus:border-[#fff] placeholder:text-[#6e6e6e];
+}
+
+.search-input-button {
+  @apply text-white absolute right-2.5 bottom-2.5 font-medium rounded-lg text-sm px-4 py-2 bg-black;
+}
+
+.card {
+  @apply w-[200px] h-[150px] border border-[#ccc] rounded-md text-white font-bold flex items-center justify-center text-center;
 }
