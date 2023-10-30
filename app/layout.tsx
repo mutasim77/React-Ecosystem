@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={ubuntuFont.className}>
         <Navbar />
-        <main className='max-w-screen-xl m-auto px-5 flex min-h-screen w-full flex-col items-center justify-center'>
+        <main className='max-w-screen-xl m-auto px-5  min-h-screen'>
           {children}
         </main>
       </body>
