@@ -270,21 +270,11 @@ export const data: IData[] = [
             },
             {
                 id: 7,
-                name: 'Rematch',
-                link: 'https://rematchjs.org/'
-            },
-            {
-                id: 8,
                 name: 'MobX',
                 link: 'https://mobx.js.org/react-integration.html'
             },
             {
-                id: 9,
-                name: 'XState',
-                link: 'https://stately.ai/docs/xstate'
-            },
-            {
-                id: 10,
+                id: 8,
                 name: 'XState',
                 link: 'https://stately.ai/docs/xstate'
             },
@@ -511,7 +501,7 @@ export const data: IData[] = [
                 link: 'https://iamdustan.com/react-hardware/'
             },
             {
-                id: 5,
+                id: 7,
                 name: 'Nil',
                 link: 'https://github.com/pmndrs/react-nil'
             },
