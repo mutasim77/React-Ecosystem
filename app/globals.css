@@ -51,5 +51,5 @@ body {
 }
 
 .card {
-  @apply w-[200px] h-[150px] border border-[#ccc] rounded-md text-white font-bold flex items-center justify-center text-center;
+  @apply w-[200px] h-[150px] rounded-md text-white font-bold flex items-center justify-center text-center bg-white bg-opacity-10 border border-gray-300 shadow-lg backdrop-blur-xl bg-white/10 hover:bg-white/0 hover:scale-105 transition-all;
 }
