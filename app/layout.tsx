@@ -3,6 +3,7 @@ import { Ubuntu } from 'next/font/google'
 import localFont from 'next/font/local';
 import './globals.css'
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const ubuntuFont = Ubuntu({
   weight: ['400', '500', '700'],
@@ -27,6 +28,7 @@ export default function RootLayout({
         <main className='max-w-screen-xl m-auto px-5  min-h-screen'>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   )
