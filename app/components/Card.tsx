@@ -1,16 +1,31 @@
-import Link from "next/link";
+"use client"
+
+import { motion } from "framer-motion"
+
+const cardAnimation = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: { duration: 3 }
+    }
+}
 
 const Card = ({ name, link }: {
     name: string,
     link: string
 }) => {
     return (
-        <Link href={link} target="_blank" className="card">
+        <motion.a
+            href={link}
+            target="_blank"
+            className="card"
+            variants={cardAnimation}
+        >
             {name}
-        </Link>
+        </motion.a>
     )
 }
 
 export default Card;
-
-// bg-gradient-to-br from-[#fff] to-[#adadad]
