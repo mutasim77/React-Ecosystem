@@ -5,10 +5,10 @@ import { useEffect, useRef } from "react";
 import { useSpring } from 'react-spring';
 
 const Globe = () => {
-    const canvasRef = useRef(null);
-    const pointerInteracting = useRef(null);
-    const pointerInteractionMovement = useRef(0);
-    const [{ r }, api] = useSpring(() => ({
+    const canvasRef = useRef<HTMLCanvasElement | null>(null);
+    const pointerInteracting = useRef<number | null>(null);
+    const pointerInteractionMovement = useRef<number>(0);
+    const [{ r }, api] = useSpring<{ r: number }>(() => ({
         r: 0,
         config: {
             mass: 1,
@@ -20,10 +20,10 @@ const Globe = () => {
     useEffect(() => {
         let phi = 0;
         let width = 0;
-        const onResize = () => canvasRef.current && (width = canvasRef.current.offsetWidth)
-        window.addEventListener('resize', onResize)
-        onResize()
-        const globe = createGlobe(canvasRef.current, {
+        const onResize = () => canvasRef.current && (width = canvasRef.current.offsetWidth);
+        window.addEventListener('resize', onResize);
+        onResize();
+        const globe = createGlobe(canvasRef.current!, {
             devicePixelRatio: 2,
             width: width * 2,
             height: width * 2,
@@ -46,8 +46,10 @@ const Globe = () => {
                 state.height = width * 2
             }
         })
-        setTimeout(() => canvasRef.current.style.opacity = '1')
+        setTimeout(() => canvasRef.current!.style.opacity = '1')
         return () => globe.destroy()
+
+        // eslint-disable-next-line
     }, [])
 
     return <div style={{
@@ -61,15 +63,15 @@ const Globe = () => {
             ref={canvasRef}
             onPointerDown={(e) => {
                 pointerInteracting.current = e.clientX - pointerInteractionMovement.current;
-                canvasRef.current.style.cursor = 'grabbing';
+                canvasRef.current!.style.cursor = 'grabbing';
             }}
             onPointerUp={() => {
                 pointerInteracting.current = null;
-                canvasRef.current.style.cursor = 'grab';
+                canvasRef.current!.style.cursor = 'grab';
             }}
             onPointerOut={() => {
                 pointerInteracting.current = null;
-                canvasRef.current.style.cursor = 'grab';
+                canvasRef.current!.style.cursor = 'grab';
             }}
             onMouseMove={(e) => {
                 if (pointerInteracting.current !== null) {
